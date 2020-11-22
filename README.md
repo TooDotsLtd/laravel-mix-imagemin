@@ -24,7 +24,7 @@ require('laravel-mix-imagemin');
 
 mix
     .js('resources/js/app.js', 'public/js')
-    .imagemin('img/*');
+    .imagemin('img');
 ```
 
 ## Configuration
@@ -45,9 +45,11 @@ require('laravel-mix-imagemin');
 mix
     .js('resources/js/app.js', 'public/js')
     .imagemin(
-        'img/**.*',
+        'img',
         {
-            context: 'resources',
+            patterns: [
+                { from: 'resources', to: 'public' },
+            ],
         },
         {
             optipng: {

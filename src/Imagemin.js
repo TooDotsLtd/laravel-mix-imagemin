@@ -28,7 +28,7 @@ class Imagemin {
         let {patterns, copyOptions, imageminOptions} = this;
 
         return [
-            new CopyWebpackPlugin(patterns, copyOptions),
+            new CopyWebpackPlugin(copyOptions),
             new ImageminPlugin(imageminOptions),
             new ManifestPlugin(patterns),
         ];

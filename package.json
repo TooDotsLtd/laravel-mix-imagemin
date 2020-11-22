@@ -10,6 +10,12 @@
   "main": "index.js",
   "repository": "https://github.com/CupOfTea696/laravel-mix-imagemin",
   "author": "Frankie Wittevrongel <frankie@cupoftea.io>",
+  "contributors": [
+    {
+      "name": "Ryan Weber",
+      "url": "https://ryan-weber.com"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/CupOfTea696/laravel-mix-imagemin/issues"
